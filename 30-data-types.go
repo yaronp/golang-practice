@@ -1,14 +1,14 @@
 package main
 
 import (
+	"bufio"
 	"fmt"
 	"os"
-	"bufio"
 	"strconv"
 )
 
 func main() {
-	var _= strconv.Itoa // Ignore this comment. You can still use the package "strconv".
+	var _ = strconv.Itoa // Ignore this comment. You can still use the package "strconv".
 
 	var i uint64 = 4
 	var d float64 = 4.0
@@ -24,9 +24,8 @@ func main() {
 	var d2 float64
 	var s2 string
 
-
 	// fmt.Scanln(&inputString)
-	i2,_ = strconv.ParseUint(inputString, 10, 64)
+	i2, _ = strconv.ParseUint(inputString, 10, 64)
 
 	// fmt.Scanln(&inputString)
 	scanner.Scan()
@@ -38,10 +37,8 @@ func main() {
 	scanner.Scan()
 	s2 = scanner.Text()
 
-	fmt.Println(int(i2+i))
-	fmt.Println(float64(d+d2))
+	fmt.Println(int(i2 + i))
+	fmt.Println(float64(d + d2))
 	fmt.Println(s + " " + s2)
 
-
 }
-
